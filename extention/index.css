@@ -345,6 +345,12 @@
     margin: 9rem 0rem 0rem 3rem;
     background-color: rgba(240, 248, 255, 0.664);
 }
+.exprience-working-contents{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0rem 0rem 0rem 1.5rem;
+}
 .exprience-working-content1{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -353,25 +359,29 @@
 .exprience-working-content1 h1{
     font-size: 6rem;
     font-weight: bolder;
-    color: rgba(0, 0, 255, 0.637)
+    color: rgba(0, 0, 255, 0.637);
+    overflow: hidden;
 }
 .exprience-working-content1 h3{
     font-size: 1.5rem;
-    margin-top: .5rem;
+    line-height: 2rem;
     color: rgba(0, 0, 255, 0.637);
+    overflow: hidden;
 }
 .exprience-working-content2{
-    margin: 4rem 3rem 0rem 3rem;
+    margin: 4rem 4rem 0rem 2rem;
 }
 #exprience-working-h4{
     font-size: 1.3rem;
     letter-spacing: .2rem;
+    overflow: hidden;
     color: rgba(0, 0, 255, 0.637);
     border-bottom: 2px dashed rgba(0, 0, 255, 0.637);
 }
 .exprience-working-content2 h4{
     margin-top: .8rem;
     letter-spacing: .2rem;
+    overflow: hidden;
     color: rgb(70, 70, 70)
 }
 /* Exprience working Section Endinging */
@@ -407,24 +417,30 @@
     grid-template-columns: 23% 23% 23% 23%;
     justify-content:space-evenly;
 }
-.service-content{
+.service-content-continer{
+    width: 95%;
+    height: 85%;
     background-color: white;
-    height: 90%;
-    width: 90%;
-    margin: 0 auto;
     box-shadow: -2px -2px 10px rgba(114, 114, 144, .5), 2px 2px 10px rgba(114, 114, 144, .5);
 }
-.service-content:hover{
+.service-content-continer:hover{
     box-shadow: 1px 1px 10px black;
     cursor:default;
     transition-duration: .4s;
 }
-.service-content:hover img{
-    transform: scale(1.2);
-    transition-duration: .4s;
+.service-content-continer:hover img{
+    transition-duration: .5s;
+    transform: rotate(360deg);
+}
+.service-content{
+    background-color: white;
+    height: 85%;
+    width: 100%;
+    margin: 0 auto;
+
 }
 .service-content img{
-    margin: 1.6rem 0rem 0rem 5.5rem;
+    margin: 1.5rem 0rem 0rem 5.8rem;
 }
 .service-content h3{
     text-align: center;
@@ -435,7 +451,11 @@
     word-spacing: .2rem;
     letter-spacing: .1rem;
     text-align: justify;
-    color: rgb(114, 114, 144)
+    color: rgb(114, 114, 144);
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Services Offeres section ending */
@@ -476,13 +496,13 @@
 }
 .img img:hover + .button{
     border-radius: 2rem;
-    border: 2px solid rgb(73, 73, 73);
+    box-shadow: 2px 2px 10px rgb(73, 73, 73);
     transition-duration: 1s;
     display: inline-block;
     cursor:default;
 }
 .img img:hover{
-    border: 3px solid rgb(73, 73, 73);
+    box-shadow: 2px 2px 10px rgb(73, 73, 73);
     transition-duration: 1s;
 }
 
